@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hugo Lima da Silva | Business &amp; Finance Data Analyst</title>
+<meta name="description" content="Business and finance data analyst with 8+ years in Quote-to-Cash at IBM. SQL, BI dashboards, revenue operations and AI-assisted automation.">
+<meta name="theme-color" content="#091a11">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23091a11'/%3E%3Crect y='54' width='64' height='10' fill='%23c4621f'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23ece1cb'%3EHS%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph / Twitter. For best results when published, change og-image.png to its full https:// URL. -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Hugo Lima da Silva | Business &amp; Finance Data Analyst">
+<meta property="og:description" content="8+ years in Quote-to-Cash at IBM. SQL, BI dashboards, revenue operations and AI-assisted automation.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hugo Lima da Silva, Business and Finance Data Analyst">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hugo Lima da Silva | Business &amp; Finance Data Analyst">
+<meta name="twitter:description" content="8+ years in Quote-to-Cash at IBM. SQL, BI dashboards, revenue operations and AI-assisted automation.">
+<meta name="twitter:image" content="og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hugo Lima da Silva",
+  "jobTitle": "Data & Business Analyst, Quote to Cash",
+  "worksFor": { "@type": "Organization", "name": "IBM" },
+  "email": "mailto:hugo_jfc21@hotmail.com",
+  "telephone": "+55 19 98197-1113",
+  "address": { "@type": "PostalAddress", "addressLocality": "Americana", "addressRegion": "SP", "addressCountry": "BR" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "ESAMC" },
+    { "@type": "CollegeOrUniversity", "name": "FIA Business School" }
+  ],
+  "knowsLanguage": ["Portuguese", "English"],
+  "knowsAbout": ["Quote-to-Cash", "Revenue Operations", "SQL", "Business Intelligence", "Billing", "Accounts Receivable", "SAP HANA", "Power BI"],
+  "sameAs": ["https://www.linkedin.com/in/hugo-lima-silva", "https://cal.com/hugo-lima-da-silva"]
+}
+</script>
+
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  /* ============================================================
+     Carbon structure (IBM Plex, tiles, tags, 3rem shell, 2x grid)
+     with a dark forest green / brown / navy / beige / orange palette
+     ============================================================ */
+  :root {
+    /* Forest (default theme) */
+    --bg: #091a11;
+    --layer: #10271a;
+    --layer-2: #0b1f14;
+    --layer-hover: #17351f;
+    --line: #1f4a30;
+    --line-strong: #3b6e50;
+
+    /* Shared */
+    --beige: #ece1cb;
+    --text: #ece1cb;
+    --text-2: #cfc3aa;
+    --text-3: #a99d85;
+    --orange: #b3541a;
+    --orange-hover: #964615;
+    --orange-light: #ee8d45;
+    --navy: #0b1426;
+    --navy-layer: #14233f;
+    --navy-line: #2a3f66;
+    --brown: #1c130d;
+    --brown-layer: #2a1d14;
+    --brown-line: #4a3425;
+    --focus: #ffffff;
+
+    --font-sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "IBM Plex Mono", Menlo, Consolas, monospace;
+
+    --motion: 240ms cubic-bezier(0.2, 0, 0.38, 0.9);
+    --sp-3: .5rem; --sp-5: 1rem; --sp-6: 1.5rem; --sp-7: 2rem; --sp-9: 3rem; --sp-11: 5rem;
+    --max: 1584px;
+  }
+
+  /* Section themes override layer tokens */
+  .t-brown { --bg: var(--brown); --layer: var(--brown-layer); --layer-2: #21170f; --layer-hover: #36251a; --line: var(--brown-line); --line-strong: #7a5a40; --text-3: #b3a58d; }
+  .t-navy  { --bg: var(--navy);  --layer: var(--navy-layer);  --layer-2: #0f1c36; --layer-hover: #1b2f52; --line: var(--navy-line); --line-strong: #4a6a9e; --text-3: #a8b6cf; }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4rem; background: #091a11; }
+  body {
+    margin: 0; background: #091a11; color: var(--text);
+    font-family: var(--font-sans); font-size: 1rem; line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, p, ul, dl, dd { margin: 0; }
+  ul { padding: 0; list-style: none; }
+  a { color: var(--orange-light); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+  .skip {
+    position: absolute; left: -999px; top: 0; z-index: 200; background: var(--orange); color: #fff;
+    padding: .75rem 1rem; font-size: .875rem;
+  }
+  .skip:focus { left: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+  .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--sp-6); }
+  .eyebrow { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .32px; text-transform: uppercase; color: var(--orange-light); margin-bottom: var(--sp-5); }
+  .section { padding: var(--sp-11) 0; background: var(--bg); border-top: 1px solid var(--line); }
+  .section-head { margin-bottom: var(--sp-9); max-width: 52rem; }
+  .section-head h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 300; line-height: 1.25; margin-bottom: var(--sp-5); color: var(--beige); }
+  .section-head p { color: var(--text-2); font-size: 1.125rem; line-height: 1.55; }
+
+  /* ---------- Shell ---------- */
+  .shell { position: sticky; top: 0; z-index: 100; background: #060f0a; border-bottom: 1px solid #1f4a30; }
+  .shell .wrap { display: flex; align-items: center; justify-content: space-between; height: 3rem; gap: var(--sp-5); }
+  .shell .name { font-weight: 600; font-size: .875rem; color: var(--beige); white-space: nowrap; }
+  .shell .name:hover { text-decoration: none; }
+  .shell .name span { font-weight: 400; color: var(--text-3); }
+  .shell nav { display: flex; position: relative; overflow-x: auto; scrollbar-width: none; }
+  .shell nav::-webkit-scrollbar { display: none; }
+  .shell nav a { display: flex; align-items: center; height: 3rem; padding: 0 var(--sp-5); font-size: .875rem; color: var(--text-2); white-space: nowrap; transition: color var(--motion), background var(--motion), box-shadow var(--motion); }
+  .shell nav a:hover { background: #17351f; color: var(--beige); text-decoration: none; }
+  .shell nav a[aria-current="true"] { color: var(--beige); font-weight: 600; box-shadow: inset 0 -3px 0 var(--orange-light); }
+  .shell nav .dot { display: none; }
+
+  /* Vertical section rail (wide screens) */
+  @media (min-width: 1057px) {
+    .wrap { padding-right: 9rem; }
+    .shell nav.rail {
+      position: fixed; right: 1.25rem; top: 50%; transform: translateY(-50%); z-index: 90;
+      flex-direction: column; align-items: flex-end; overflow: visible;
+    }
+    .rail::before, .rail::after {
+      content: ""; position: absolute; right: calc(.4375rem - 1px); top: 1rem; width: 2px; border-radius: 1px;
+    }
+    .rail::before { bottom: 1rem; background: #2c5a3f; }
+    .rail::after { height: calc((100% - 2rem) * var(--p, 0)); background: var(--orange-light); transition: height 400ms cubic-bezier(0.2, 0, 0.38, 0.9); }
+    .shell nav.rail a {
+      position: relative; z-index: 1; height: 2rem; padding: 0 0 0 .5rem; gap: .75rem; justify-content: flex-end;
+      font-size: .8125rem; letter-spacing: .2px; color: #a99d85; background: none; box-shadow: none;
+    }
+    .shell nav.rail a:hover { background: none; color: var(--beige); }
+    .shell nav.rail a[aria-current="true"] { color: var(--beige); font-weight: 600; box-shadow: none; }
+    .shell nav.rail .dot {
+      display: block; flex: none; width: .875rem; height: .875rem; border-radius: 50%;
+      background: #091a11; border: 2px solid #4b8062;
+      transition: background var(--motion), border-color var(--motion), box-shadow var(--motion), transform var(--motion);
+    }
+    .shell nav.rail a:hover .dot { border-color: var(--orange-light); }
+    .shell nav.rail a[aria-current="true"] .dot { background: var(--orange-light); border-color: var(--orange-light); box-shadow: 0 0 0 4px rgba(238,141,69,.28); transform: scale(1.15); }
+  }
+
+  /* ---------- Tags ---------- */
+  .tag { display: inline-flex; align-items: center; min-height: 1.5rem; padding: 0 .5rem; border-radius: 1rem; font-size: .75rem; line-height: 1.33; background: #14402a; color: #c4ecd2; }
+  .tag-navy   { background: #1a3866; color: #d6e5ff; }
+  .tag-brown  { background: #5a4130; color: #f5e3cc; }
+  .tag-orange { background: #6b3410; color: #ffd8b8; }
+  .tag-beige  { background: #ece1cb; color: #2a1d14; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+  /* ---------- Buttons ---------- */
+  .btn-row { display: flex; flex-wrap: wrap; gap: 1px; }
+  .btn {
+    display: inline-flex; align-items: center; min-height: 3rem; padding: .875rem 4rem .875rem 1rem;
+    font: inherit; font-size: .875rem; color: #fff; background: var(--orange); border: 0; cursor: pointer; position: relative;
+    transition: background var(--motion);
+  }
+  .btn::after { content: "\2192"; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); font-size: 1.125rem; }
+  .btn:hover { background: var(--orange-hover); text-decoration: none; }
+  .btn.secondary { background: #1f3560; color: #e6eeff; }
+  .btn.secondary:hover { background: #2a4680; }
+  .btn.small { min-height: 2rem; padding: .375rem 1rem; }
+  .btn.small::after { content: none; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: var(--sp-11) 0 var(--sp-9); background: #091a11; }
+  .hero-grid { display: grid; grid-template-columns: 3fr 2fr; gap: var(--sp-9); align-items: center; }
+  .hero h1 { font-size: clamp(2.5rem, 6vw, 4.75rem); font-weight: 300; line-height: 1.1; margin-bottom: var(--sp-6); color: var(--beige); }
+  .hero .lead { font-size: 1.25rem; line-height: 1.5; color: var(--text-2); max-width: 40rem; margin-bottom: var(--sp-6); }
+  .roles { margin-bottom: var(--sp-7); }
+  .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--navy-line); border: 1px solid var(--navy-line); border-top: 4px solid var(--orange); }
+  .hero-stats div { background: var(--navy-layer); padding: var(--sp-6); }
+  .hero-stats b { display: block; font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 300; line-height: 1.2; color: var(--orange-light); }
+  .hero-stats span { display: block; font-size: .875rem; color: #c9d4e8; margin-top: .5rem; }
+
+  /* ---------- Recruiter quick view ---------- */
+  .quick { background: var(--brown); border-top: 1px solid var(--brown-line); border-bottom: 1px solid var(--brown-line); padding: var(--sp-7) 0; }
+  .quick-title { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .32px; text-transform: uppercase; color: var(--orange-light); margin-bottom: var(--sp-5); }
+  .quick dl { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--sp-6); }
+  .quick dt { font-size: .75rem; font-weight: 600; letter-spacing: .32px; text-transform: uppercase; color: #b3a58d; margin-bottom: .25rem; }
+  .quick dd { font-size: .875rem; color: var(--beige); line-height: 1.5; }
+  .quick dd a { color: var(--orange-light); }
+
+  /* ---------- Summary / generic tiles ---------- */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-9); }
+  .prose p { font-size: 1.125rem; line-height: 1.6; color: var(--text-2); margin-bottom: var(--sp-5); }
+  .prose p:last-child { margin-bottom: 0; }
+  .tile { background: var(--layer); border: 1px solid var(--line); border-top: 4px solid var(--orange); padding: var(--sp-6); }
+  .tile h3 { font-size: 1.25rem; font-weight: 400; margin-bottom: var(--sp-5); color: var(--beige); }
+  .check-list li { position: relative; padding: .5rem 0 .5rem 1.75rem; border-bottom: 1px solid var(--line); color: var(--text-2); font-size: .875rem; }
+  .check-list li:last-child { border-bottom: 0; }
+  .check-list li::before { content: ""; position: absolute; left: .25rem; top: .85rem; width: .4rem; height: .75rem; border: solid var(--orange-light); border-width: 0 2px 2px 0; transform: rotate(45deg) scale(.9); }
+
+  /* ---------- Competencies ---------- */
+  .comp-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .comp { background: var(--layer); padding: var(--sp-6); display: flex; flex-direction: column; gap: var(--sp-5); }
+  .comp .idx { font-family: var(--font-mono); font-size: .75rem; color: var(--orange-light); }
+  .comp h3 { font-size: 1.25rem; font-weight: 400; line-height: 1.3; color: var(--beige); }
+  .comp p { font-size: .875rem; color: #c9d4e8; }
+  .comp .tag-row { margin-top: auto; }
+
+  /* ---------- Achievements ---------- */
+  .ach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .ach { background: var(--layer); padding: var(--sp-7); display: flex; flex-direction: column; gap: var(--sp-5); }
+  .ach:hover { background: var(--layer-hover); }
+  .ach .num { font-family: var(--font-mono); font-size: .75rem; color: var(--orange-light); }
+  .ach h3 { font-size: 1.5rem; font-weight: 300; line-height: 1.3; color: var(--beige); }
+  .ach > p { color: var(--text-2); font-size: .9375rem; }
+  .ach h4 { font-size: .75rem; font-weight: 600; letter-spacing: .32px; text-transform: uppercase; color: var(--text-3); margin-bottom: .5rem; }
+  .bul li { position: relative; padding-left: 1rem; font-size: .875rem; color: var(--text-2); margin-bottom: .5rem; }
+  .bul li::before { content: "\2013"; position: absolute; left: 0; color: var(--orange-light); }
+  .bul strong { color: var(--beige); font-weight: 600; }
+  .ach .tag-row { margin-top: auto; padding-top: var(--sp-5); }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .metrics div { background: var(--layer-2); padding: .75rem 1rem; }
+  .metrics b { display: block; font-size: 1.5rem; font-weight: 300; color: var(--orange-light); line-height: 1.2; }
+  .metrics span { font-size: .75rem; color: var(--text-3); }
+  .source { font-size: .75rem; color: var(--text-3); }
+
+  .flow { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; font-family: var(--font-mono); font-size: .75rem; }
+  .flow span { background: var(--layer-2); border: 1px solid var(--line); padding: .25rem .5rem; color: var(--beige); }
+  .flow i { color: var(--orange-light); font-style: normal; }
+
+  pre.code { margin: 0; padding: var(--sp-5); background: #120c08; border: 1px solid var(--line); overflow-x: auto; font-family: var(--font-mono); font-size: .75rem; line-height: 1.6; color: #e6dcc6; }
+  pre.code .k { color: var(--orange-light); } pre.code .c { color: #8c7f68; } pre.code .f { color: #9fc3ff; }
+  .caption { font-size: .75rem; color: var(--text-3); margin-top: -.25rem; }
+
+  /* ---------- Accordion ---------- */
+  .acc-tools { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-5); margin-bottom: var(--sp-6); }
+  .acc-tools .org { font-size: .875rem; color: var(--text-2); }
+  .acc-tools .org strong { color: var(--beige); font-weight: 600; }
+  .acc-tools .btn-row { display: none; }
+  .js .acc-tools .btn-row { display: flex; }
+
+  .acc { border-top: 1px solid var(--line-strong); }
+  .acc-item { border-bottom: 1px solid var(--line); }
+  .acc-head { margin: 0; }
+  .acc-btn {
+    width: 100%; display: grid; grid-template-columns: 1fr auto; gap: var(--sp-5); align-items: start;
+    padding: var(--sp-6) var(--sp-5); background: transparent; border: 0; color: inherit; font: inherit; text-align: left; cursor: default;
+  }
+  .js .acc-btn { grid-template-columns: 1.5rem 1fr auto; cursor: pointer; transition: background var(--motion); }
+  .js .acc-btn:hover { background: var(--layer-hover); }
+  .acc-chev { display: none; width: 1rem; height: 1rem; margin-top: .45rem; transition: transform var(--motion); }
+  .js .acc-chev { display: block; }
+  .acc-chev::before { content: ""; display: block; width: .6rem; height: .6rem; border: solid var(--orange-light); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+  .acc-item.open .acc-chev { transform: rotate(180deg); }
+  .acc-title { font-size: 1.25rem; font-weight: 400; line-height: 1.3; color: var(--beige); }
+  .acc-sub { display: block; font-size: .875rem; color: var(--text-2); margin-top: .25rem; }
+  .acc-date { font-family: var(--font-mono); font-size: .8125rem; color: var(--text-3); white-space: nowrap; padding-top: .25rem; }
+
+  .acc-panel { display: grid; grid-template-rows: 1fr; }
+  .js .acc-panel { grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows var(--motion), visibility 0s linear var(--motion); }
+  .js .acc-item.open .acc-panel { grid-template-rows: 1fr; visibility: visible; transition: grid-template-rows var(--motion), visibility 0s; }
+  .acc-inner { overflow: hidden; min-height: 0; }
+  .js .acc-inner { opacity: 0; transition: opacity var(--motion); }
+  .js .acc-item.open .acc-inner { opacity: 1; }
+  .acc-body { padding: 0 var(--sp-5) var(--sp-7) var(--sp-5); }
+  .js .acc-body { padding-left: calc(var(--sp-5) + 1.5rem + var(--sp-5)); }
+  .acc-body li { position: relative; padding-left: 1rem; margin-bottom: .75rem; color: var(--text-2); font-size: .9375rem; max-width: 56rem; }
+  .acc-body li::before { content: "\2013"; position: absolute; left: 0; color: var(--orange-light); }
+  .acc-body li strong { color: var(--beige); font-weight: 600; }
+  .badge-now { margin-left: .75rem; vertical-align: middle; }
+
+  /* ---------- Skills ---------- */
+  .skill-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .skill { background: var(--layer); padding: var(--sp-6); }
+  .skill h3 { font-size: 1rem; font-weight: 600; margin-bottom: var(--sp-5); color: var(--beige); }
+
+  /* ---------- Education / awards ---------- */
+  .col-h { font-size: 1.5rem; font-weight: 300; margin-bottom: var(--sp-6); color: var(--beige); }
+  .edu { background: var(--layer); border: 1px solid var(--line); border-left: 3px solid var(--orange); padding: var(--sp-6); margin-bottom: 1px; }
+  .edu h4 { font-size: 1.0625rem; font-weight: 400; margin-bottom: .25rem; color: var(--beige); }
+  .edu p { font-size: .875rem; color: var(--text-2); }
+  .edu .when { font-family: var(--font-mono); font-size: .75rem; color: var(--orange-light); margin-top: .5rem; }
+  .awards { border-top: 1px solid var(--line-strong); }
+  .award { padding: var(--sp-5) 0; border-bottom: 1px solid var(--line); }
+  .award h4 { font-size: 1rem; font-weight: 600; color: var(--beige); }
+  .award .when { font-family: var(--font-mono); font-size: .75rem; color: var(--orange-light); margin: .25rem 0 .5rem; }
+  .award p { font-size: .875rem; color: var(--text-2); }
+
+  /* ---------- Credentials (Credly) ---------- */
+  .two > .creds { grid-column: 1 / -1; padding-top: var(--sp-7); border-top: 1px solid var(--line); }
+  .creds .col-h { margin-bottom: var(--sp-5); }
+  .creds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .cred { display: grid; grid-template-columns: 5rem 1fr; gap: var(--sp-5); align-items: center; background: var(--layer); padding: var(--sp-5); color: inherit; transition: background var(--motion); }
+  .cred:hover { background: var(--layer-hover); text-decoration: none; }
+  .cred img { display: block; width: 5rem; height: 5rem; object-fit: contain; border-radius: 3px; }
+  .cred h3 { font-size: .9375rem; font-weight: 600; line-height: 1.3; color: var(--beige); }
+  .cred .issuer { font-size: .8125rem; color: var(--text-2); margin-top: .125rem; }
+  .cred .meta { margin-top: .375rem; font-family: var(--font-mono); font-size: .75rem; color: var(--orange-light); }
+  .cred .meta .verify { font-family: var(--font-sans); }
+  .cred .meta .verify::after { content: " \2197"; }
+  .cred:hover .meta .verify { text-decoration: underline; }
+
+  /* ---------- Contact ---------- */
+  .contact {
+    background: linear-gradient(135deg, #5a3d2b 0%, #3d3a45 50%, #2a3d63 100%);
+    border-radius: 22px; padding: var(--sp-11) var(--sp-9); text-align: center;
+  }
+ore  .contact .eyebrow { letter-spacing: .14em; margin-bottom: var(--sp-5); color: #f7b27a; }
+  .contact h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 700; line-height: 1.2; margin-bottom: var(--sp-6); color: var(--beige); }
+  .contact p { max-width: 44rem; margin: 0 auto var(--sp-7); color: #e6dcc8; font-size: 1.25rem; line-height: 1.7; }
+  .contact-list { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--sp-5) var(--sp-7); margin-bottom: var(--sp-7); font-size: 1.125rem; color: var(--beige); }
+  .contact-list a { color: var(--beige); border-bottom: 1px solid rgba(236,225,203,.5); }
+  .contact-list a:hover { text-decoration: none; border-bottom-color: var(--orange-light); }
+  .contact .btn-row { justify-content: center; gap: var(--sp-5); }
+  .contact .btn { padding: 1rem 2rem; min-height: 0; border-radius: 12px; font-size: 1.125rem; font-weight: 600; border: 2px solid transparent; }
+  .contact .btn::after { content: none; }
+  .contact .btn.outline { background: transparent; color: var(--beige); border-color: rgba(236,225,203,.7); }
+  .contact .btn.outline:hover { background: rgba(236,225,203,.12); }
+
+  footer { background: #060f0a; border-top: 1px solid #1f4a30; padding: var(--sp-6) 0 var(--sp-9); font-size: .75rem; color: #a99d85; }
+
+  /* ---------- Responsive (Carbon breakpoints 672 / 1056 / 1312) ---------- */
+  @media (max-width: 1312px) {
+    .comp-grid { grid-template-columns: repeat(3, 1fr); }
+    .skill-grid { grid-template-columns: repeat(2, 1fr); }
+    .creds-grid { grid-template-columns: repeat(2, 1fr); }
+    .quick dl { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 1056px) {
+    .hero-grid, .two { grid-template-columns: 1fr; }
+    .ach-grid { grid-template-columns: 1fr; }
+    .comp-grid { grid-template-columns: repeat(2, 1fr); }
+    .quick dl { grid-template-columns: repeat(2, 1fr); }
+    .section { padding: var(--sp-9) 0; }
+    .hero { padding-top: var(--sp-9); }
+  }
+  @media (max-width: 672px) {
+    .wrap { padding: 0 var(--sp-5); }
+    .shell .name span { display: none; }
+    .comp-grid, .skill-grid, .quick dl, .creds-grid { grid-template-columns: 1fr; }
+    .ach { padding: var(--sp-6) var(--sp-5); }
+    .acc-btn, .js .acc-btn { grid-template-columns: 1fr; padding: var(--sp-5) .5rem; }
+    .js .acc-btn { grid-template-columns: 1.5rem 1fr; }
+    .js .acc-date { grid-column: 2; padding-top: 0; }
+    .acc-date { padding-top: 0; }
+    .acc-body, .js .acc-body { padding: 0 .5rem var(--sp-6) .5rem; }
+    .btn { width: 100%; }
+    .btn-row { flex-direction: column; }
+    .contact { padding: var(--sp-9) var(--sp-5); }
+    .contact-list { flex-direction: column; gap: var(--sp-3); font-size: 1rem; }
+    .contact p { font-size: 1.0625rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition-duration: 1ms !important; }
+  }
+  @media print {
+    body, html { background: #fff; color: #000; }
+    .shell, .btn-row, .skip { display: none !important; }
+    .js .acc-panel { grid-template-rows: 1fr !important; visibility: visible !important; }
+    .js .acc-inner { opacity: 1 !important; }
+    * { color: #000 !important; background: #fff !important; border-color: #999 !important; }
+  }
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="shell">
+  <div class="wrap">
+    <a class="name" href="#top">Hugo Lima da Silva <span>/ Portfolio</span></a>
+    <nav class="rail" id="rail" aria-label="Page sections">
+      <a href="#summary"><span class="lbl">Summary</span><span class="dot" aria-hidden="true"></span></a>
+      <a href="#competencies"><span class="lbl">Competencies</span><span class="dot" aria-hidden="true"></span></a>
+      <a href="#achievements"><span class="lbl">Achievements</span><span class="dot" aria-hidden="true"></span></a>
+      <a href="#experience"><span class="lbl">Experience</span><span class="dot" aria-hidden="true"></span></a>
+      <a href="#skills"><span class="lbl">Skills</span><span class="dot" aria-hidden="true"></span></a>
+      <a href="#education"><span class="lbl">Education</span><span class="dot" aria-hidden="true"></span></a>
+      <a href="#credentials"><span class="lbl">Credentials</span><span class="dot" aria-hidden="true"></span></a>
+      <a href="#contact"><span class="lbl">Contact</span><span class="dot" aria-hidden="true"></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Revenue Strategy &amp; Operations · Americas</p>
+        <h1>Hugo Lima da Silva</h1>
+        <p class="lead">Data and business analyst with 8+ years in Quote-to-Cash at IBM. I led a renewal-pricing control that proactively re-checks $650M+ a year in software renewal billings, and I build the dashboards and automation that keep billing and Accounts Receivable accurate.</p>
+        <div class="tag-row roles" aria-label="Target roles">
+          <span class="tag tag-navy">Business Analyst</span>
+          <span class="tag tag-navy">Finance Data Analyst</span>
+          <span class="tag tag-navy">Revenue Operations Analyst</span>
+          <span class="tag tag-navy">Business Systems Analyst</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn" href="Resume_HugoSilva.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
+          <a class="btn secondary" href="#achievements">View achievements</a>
+        </div>
+      </div>
+      <div class="hero-stats" role="list">
+        <div role="listitem"><b>$650M+</b><span>Annual software renewal billings with pricing proactively re-checked, across 200+ accounts</span></div>
+        <div role="listitem"><b>8+</b><span>Years in Quote-to-Cash and revenue operations</span></div>
+        <div role="listitem"><b>$200M+</b><span>Backlog revenue monitored daily</span></div>
+        <div role="listitem"><b>420+</b><span>Professionals in 93 Agile squads supported by reporting</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECRUITER QUICK VIEW -->
+  <section class="quick" aria-labelledby="quick-title">
+    <div class="wrap">
+      <h2 class="quick-title" id="quick-title">Recruiter quick view</h2>
+      <dl>
+        <div><dt>Region &amp; time zone</dt><dd>Supports North American and Americas teams from Brazil (UTC−3)</dd></div>
+        <div><dt>Current role</dt><dd>Data &amp; Business Analyst, Quote to Cash Americas, IBM (since 08/2025)</dd></div>
+        <div><dt>Core stack</dt><dd>SQL · Power BI · IBM Cognos · SAP S/4HANA · Db2 · Excel · GitHub · IBM Bob · Microsoft Copilot</dd></div>
+        <div><dt>Location &amp; languages</dt><dd>Americana, São Paulo, Brazil · Portuguese and English, both fluent</dd></div>
+        <div><dt>Contact</dt><dd><a href="mailto:hugo_jfc21@hotmail.com">hugo_jfc21@hotmail.com</a><br><a href="https://cal.com/hugo-lima-da-silva" target="_blank" rel="noopener">Book a call</a> · <a href="https://www.linkedin.com/in/hugo-lima-silva" target="_blank" rel="noopener">LinkedIn</a> · <a href="Resume_HugoSilva.pdf" target="_blank" rel="noopener">Resume PDF</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <section class="section" id="summary">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">01 · Professional summary</p>
+        <h2>Analytics that connect operations to revenue</h2>
+      </div>
+      <div class="two">
+        <div class="prose">
+          <p>Revenue Strategy &amp; Operations professional with 8+ years of experience scaling end-to-end Quote-to-Cash and revenue operations across IBM’s Americas organization. I combine technical problem-solving, operational excellence and business analytics to build tools, automations, reporting structures and dashboards that improve execution, strengthen controls and support leadership decisions.</p>
+          <p>I work as a cross-functional partner to senior leaders across Sales, Finance, Accounts Receivable, Operations and audit teams. I manage complex processes autonomously and translate business problems into scalable analytical solutions using SQL, BI tools, automation and KPI design, across Software, Cloud, Security and Infrastructure portfolios.</p>
+        </div>
+        <div class="tile">
+          <h3>Why this fits analyst roles</h3>
+          <ul class="check-list">
+            <li>Builds the report and the process behind it, not only the chart</li>
+            <li>Reconciles data across billing, AR, contract and ERP systems</li>
+            <li>Presents to a GEO Vice President and second-line managers</li>
+            <li>Works within SOX and external audit requirements</li>
+            <li>Applies AI assistants and agents to repeatable finance workflows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCIES -->
+  <section class="section t-navy" id="competencies">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">02 · Integrated competencies</p>
+        <h2>Five capabilities, used together on real enterprise work</h2>
+        <p>Each achievement below draws on more than one of these, which is what separates operational analytics from stand-alone data exercises.</p>
+      </div>
+      <div class="comp-grid">
+        <div class="comp">
+          <span class="idx">A</span>
+          <h3>Data Analytics</h3>
+          <p>SQL, reporting and dashboards over billing, AR, dispute, backlog and contract data.</p>
+          <div class="tag-row"><span class="tag tag-orange">SQL</span><span class="tag tag-orange">Dashboards</span><span class="tag tag-orange">Reporting</span></div>
+        </div>
+        <div class="comp">
+          <span class="idx">B</span>
+          <h3>Finance &amp; Business Operations</h3>
+          <p>Quote-to-Cash, billing, Accounts Receivable and revenue recognition.</p>
+          <div class="tag-row"><span class="tag tag-orange">Quote-to-Cash</span><span class="tag tag-orange">Billing</span><span class="tag tag-orange">Accounts Receivable</span><span class="tag tag-orange">Revenue</span></div>
+        </div>
+        <div class="comp">
+          <span class="idx">C</span>
+          <h3>Business Intelligence</h3>
+          <p>KPI scorecards and operational insight that lead to a decision or action.</p>
+          <div class="tag-row"><span class="tag tag-orange">Power BI</span><span class="tag tag-orange">Cognos</span><span class="tag tag-orange">KPI design</span></div>
+        </div>
+        <div class="comp">
+          <span class="idx">D</span>
+          <h3>AI Integration</h3>
+          <p>IBM Bob, Microsoft Copilot and AI agents applied to forecasting and reporting workflows.</p>
+          <div class="tag-row"><span class="tag tag-beige">IBM Bob</span><span class="tag tag-beige">Copilot</span><span class="tag tag-beige">AI agents</span></div>
+        </div>
+        <div class="comp">
+          <span class="idx">E</span>
+          <h3>Enterprise Experience</h3>
+          <p>Complex processes, international accounts, audit compliance and financial governance.</p>
+          <div class="tag-row"><span class="tag tag-orange">SOX</span><span class="tag tag-orange">Governance</span><span class="tag tag-orange">International</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section t-brown" id="achievements">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">03 · Professional achievements</p>
+        <h2>Four flagship projects</h2>
+        <p>Selected work from my IBM roles. Figures come from my resume and each one names the role it belongs to. Client names and confidential data are omitted.</p>
+      </div>
+
+      <div class="ach-grid">
+
+        <article class="ach">
+          <span class="num">01 · Dashboard</span>
+          <h3>Hyperscaler Billing &amp; AR / Dispute Dashboard</h3>
+          <p>Consolidates billing, Accounts Receivable, dispute, backlog and contract data into one view of revenue performance and operational risk for Americas leadership.</p>
+          <div class="flow" aria-label="Data flow"><span>Billing</span><i>+</i><span>AR</span><i>+</i><span>Disputes</span><i>+</i><span>Contracts</span><i>&rarr;</i><span>KPI dashboard</span><i>&rarr;</i><span>Leadership</span></div>
+          <div class="metrics">
+            <div><b>600+</b><span>disputes tracked in a purpose-built system</span></div>
+            <div><b>~40%</b><span>of U.S. brand invoicing covered by that client</span></div>
+            <div><b>$200M+</b><span>backlog revenue monitored daily</span></div>
+          </div>
+          <p class="source">Sources: dispute tracker, Contract Manager (2022–2023); backlog monitoring, Data &amp; Business Analyst (2025–present).</p>
+          <div>
+            <h4>What it shows</h4>
+            <ul class="bul">
+              <li>Customer impact, <strong>aging, root causes</strong> and resolution priorities in one place</li>
+              <li>Daily view of <strong>billing and contract volumes</strong> across Consulting acquisitions</li>
+              <li>BI dashboards for new go-to-market offerings and channels, by geography</li>
+            </ul>
+          </div>
+          <div class="tag-row"><span class="tag tag-orange">Data Analytics</span><span class="tag tag-orange">Finance Ops</span><span class="tag tag-orange">Business Intelligence</span></div>
+        </article>
+
+        <article class="ach">
+          <span class="num">02 · Automation &amp; AI</span>
+          <h3>Subscription License Billing &amp; Revenue Forecasting</h3>
+          <p>Automated billing and revenue forecasting model for Software Entitlements, combining business rules, process logic and AI agents.</p>
+          <div class="flow" aria-label="Workflow"><span>Entitlements</span><i>&rarr;</i><span>Business rules</span><i>&rarr;</i><span>AI agent</span><i>&rarr;</i><span>Billing &amp; forecast</span><i>&rarr;</i><span>Review</span></div>
+          <div>
+            <h4>Approach</h4>
+            <ul class="bul">
+              <li><strong>Rules-based forecasting</strong> that aligns data outputs with revenue requirements</li>
+              <li><strong>AI-assisted workflow</strong> using IBM Bob, Microsoft Copilot and AI agents to speed build and review</li>
+              <li>Identifies where <strong>automation and control improvements</strong> can scale operations</li>
+              <li>Supporting trackers: financing-accrual tracker for delayed invoices; shipped-but-uninstalled machine control</li>
+            </ul>
+          </div>
+          <div class="tag-row"><span class="tag tag-beige">AI Integration</span><span class="tag tag-orange">Forecasting</span><span class="tag tag-orange">Revenue Recognition</span><span class="tag tag-orange">Automation</span></div>
+        </article>
+
+        <article class="ach">
+          <span class="num">03 · SQL &amp; data</span>
+          <h3>SQL &amp; Data Analysis Projects</h3>
+          <p>Complex queries and data transformations that turn raw system records into controls: discount validation, accrual identification and tax-requirement detection.</p>
+          <div>
+            <h4>Representative work</h4>
+            <ul class="bul">
+              <li><strong>SQL + SAP HANA SD</strong> financing-accrual tracker for delayed invoices</li>
+              <li><strong>Db2, QMF for Workstation, SPSS Modeler</strong> system to flag billing-related tax requirements on high-value software contracts</li>
+              <li>Renewal-cycle <strong>discount validation</strong>: beyond monitoring the software inventory of 200+ North American accounts, it enabled <strong>proactive price revalidation on $650M+ USD in annual renewal billings</strong>, preventing about $50M in invalid billings</li>
+              <li>SAP-integrated monitoring of <strong>export-compliance approvals</strong> for AI chip-enabled hardware</li>
+            </ul>
+          </div>
+          <pre class="code" tabindex="0" aria-label="Illustrative SQL example"><span class="c">-- Illustrative pattern only: generic table names, no client data</span>
+<span class="k">SELECT</span> i.account_id,
+       i.invoice_id,
+       i.net_amount,
+       <span class="f">DAYS</span>(<span class="k">CURRENT DATE</span>) - <span class="f">DAYS</span>(i.expected_bill_date) <span class="k">AS</span> days_delayed
+<span class="k">FROM</span>   invoices i
+<span class="k">JOIN</span>   contracts c <span class="k">ON</span> c.contract_id = i.contract_id
+<span class="k">WHERE</span>  i.status = <span class="f">'PENDING'</span>
+  <span class="k">AND</span>  c.financing_flag = <span class="f">'Y'</span>
+  <span class="k">AND</span>  i.expected_bill_date &lt; <span class="k">CURRENT DATE</span> - <span class="f">30</span> <span class="k">DAYS</span>
+<span class="k">ORDER BY</span> days_delayed <span class="k">DESC</span>;</pre>
+          <p class="caption">Shows the type of logic used to surface delayed invoices; not production code.</p>
+          <div class="tag-row"><span class="tag tag-orange">SQL</span><span class="tag tag-orange">SAP HANA</span><span class="tag tag-orange">Db2</span><span class="tag tag-orange">Data transformation</span></div>
+        </article>
+
+        <article class="ach">
+          <span class="num">04 · Governance</span>
+          <h3>Operational Performance &amp; Governance</h3>
+          <p>Multi-business reporting and audit-ready controls across Software, Cloud, Security and Infrastructure, supporting international and enterprise accounts.</p>
+          <div class="metrics">
+            <div><b>93</b><span>Agile squads covered by reporting</span></div>
+            <div><b>420+</b><span>professionals supported</span></div>
+            <div><b>98%+</b><span>billing accuracy kept as Q2C Analyst</span></div>
+          </div>
+          <div>
+            <h4>Scope</h4>
+            <ul class="bul">
+              <li>KPI scorecards for a <strong>GEO Vice President and nine second-line managers</strong></li>
+              <li><strong>SOX-compliant</strong> contract audits; coordination of internal and external audits, including PwC reviews</li>
+              <li>Managed a <strong>$63M renewal billing</strong> and an <strong>$800K+ reconciliation</strong> across brands</li>
+              <li>Resolved <strong>$11M+</strong> in open balances across 140+ disputed invoices in five months</li>
+              <li>Led a six-person team on invoice accuracy, cycle time and dispute resolution</li>
+            </ul>
+          </div>
+          <div class="tag-row"><span class="tag tag-orange">Enterprise Experience</span><span class="tag tag-orange">Audit &amp; SOX</span><span class="tag tag-orange">Governance</span><span class="tag tag-orange">Leadership</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">04 · Work experience</p>
+        <h2>Career at IBM</h2>
+      </div>
+
+      <div class="acc-tools">
+        <p class="org"><strong>IBM · Quote to Cash / Finance Operations</strong> · Americas | North America · 2018 – Present</p>
+        <div class="btn-row">
+          <button type="button" class="btn secondary small" id="expandAll">Expand all</button>
+          <button type="button" class="btn secondary small" id="collapseAll">Collapse all</button>
+        </div>
+      </div>
+
+      <div class="acc">
+
+        <div class="acc-item open">
+          <h3 class="acc-head">
+            <button class="acc-btn" type="button" aria-expanded="true" aria-controls="p1" id="b1">
+              <span class="acc-chev" aria-hidden="true"></span>
+              <span>
+                <span class="acc-title">Data &amp; Business Analyst, Quote to Cash Americas<span class="tag tag-orange badge-now">Current</span></span>
+                <span class="acc-sub">Americas Q2C organization</span>
+              </span>
+              <span class="acc-date">08/2025 – Present</span>
+            </button>
+          </h3>
+          <div class="acc-panel" id="p1" role="region" aria-labelledby="b1"><div class="acc-inner"><div class="acc-body"><ul>
+            <li>Own revenue operations analytics and management reporting for the Americas Q2C organization, supporting <strong>93 Agile squads and 420+ professionals</strong> with dashboards, KPI scorecards and leadership-ready reporting for a GEO Vice President and nine second-line managers.</li>
+            <li>Build and maintain dashboards, tools and automated reporting that consolidate billing, Accounts Receivable, dispute, backlog and contract data across business units.</li>
+            <li>Developed an <strong>automated billing and revenue forecasting model</strong> for Software Entitlements using AI agents, business rules and process logic.</li>
+            <li>Published BI dashboards that track financial performance across geographies and connect operational activity to revenue outcomes for new go-to-market offerings and channels.</li>
+            <li>Reduced revenue-recognition risk with a <strong>SQL and SAP HANA SD financing-accrual tracker</strong> that identified delayed invoices eligible for accounting accruals.</li>
+            <li>Created a control system for shipped-but-uninstalled machines that connects shipment, installation, billing and revenue recognition.</li>
+            <li>Designed a SAP-integrated system using Db2, QMF for Workstation and SPSS Modeler to identify billing-related tax requirements for high-value software contracts.</li>
+            <li>Designed a SAP-integrated monitoring system for export-compliance approvals of AI chip-enabled IBM Hardware, surfacing blockers earlier across international operations.</li>
+            <li>Built daily monitoring of billing and contract volumes covering <strong>more than $200M in backlog revenue</strong> across Consulting acquisitions.</li>
+          </ul></div></div></div>
+        </div>
+
+        <div class="acc-item">
+          <h3 class="acc-head">
+            <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p2" id="b2">
+              <span class="acc-chev" aria-hidden="true"></span>
+              <span>
+                <span class="acc-title">Team Lead → Order Manager → Dispute Specialist</span>
+                <span class="acc-sub">Z Software North America</span>
+              </span>
+              <span class="acc-date">09/2023 – 08/2025</span>
+            </button>
+          </h3>
+          <div class="acc-panel" id="p2" role="region" aria-labelledby="b2"><div class="acc-inner"><div class="acc-body"><ul>
+            <li>Prevented about <strong>$50M in invalid billings</strong> through an end-to-end renewal-cycle control that standardized discount validation and was adopted by contract-management teams. Beyond monitoring the software inventory of 200+ North American accounts, it enabled <strong>proactive price revalidation on $650M+ USD in annual renewal billings</strong>.</li>
+            <li>Led a <strong>six-person</strong> revenue operations team: prioritized workloads, removed blockers and monitored KPIs for invoice accuracy, cycle time, customer experience and dispute resolution.</li>
+            <li>Resolved <strong>more than $11M</strong> in open software balances across 140+ disputed invoices in five months, working with AR, Finance and Sales on root cause and process correction.</li>
+            <li>Managed a <strong>$63M renewal billing</strong> for a sensitive enterprise client across Sales, Accounting and Accounts Receivable.</li>
+            <li>Coordinated configuration changes, renewals, decommissions, purchase-order issues and multi-state tax reconciliation for Enterprise and Business Partner accounts.</li>
+            <li>Coordinated closure of expired purchase orders, deferral reporting and internal and external audits, including SOX and PwC reviews.</li>
+            <li>Advised Finance and business leadership on revenue trends and recurring blockers, turning them into process-improvement actions.</li>
+          </ul></div></div></div>
+        </div>
+
+        <div class="acc-item">
+          <h3 class="acc-head">
+            <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p3" id="b3">
+              <span class="acc-chev" aria-hidden="true"></span>
+              <span>
+                <span class="acc-title">Contract Manager</span>
+                <span class="acc-sub">Security Services and Cloud Services North America</span>
+              </span>
+              <span class="acc-date">02/2022 – 08/2023</span>
+            </button>
+          </h3>
+          <div class="acc-panel" id="p3" role="region" aria-labelledby="b3"><div class="acc-inner"><div class="acc-body"><ul>
+            <li>Managed revenue and contract operations across Cloud, Security and multi-brand portfolios, from contract registration through billing and reconciliation, including clause review and risk assessment.</li>
+            <li>Resolved an <strong>$800K+ revenue reconciliation</strong> for a multi-brand account through usage-versus-billing analysis and corrective action planning.</li>
+            <li>Designed a dispute-tracking system for <strong>600+ disputes</strong> for a top-tier client responsible for about 40% of U.S. brand invoicing.</li>
+            <li>Maintained a <strong>99 NPS across 40+ stakeholders</strong> with clear communication and practical recommendations.</li>
+            <li>Trained North American sellers on contract registration and standardized firm-order policy knowledge.</li>
+            <li>Analyzed Cloud IaaS and PaaS usage, billing accuracy, contractual releases and monthly invoice performance for Sales, Product and Finance leaders.</li>
+          </ul></div></div></div>
+        </div>
+
+        <div class="acc-item">
+          <h3 class="acc-head">
+            <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p4" id="b4">
+              <span class="acc-chev" aria-hidden="true"></span>
+              <span>
+                <span class="acc-title">Quote to Cash Analyst (Intern → Analyst)</span>
+                <span class="acc-sub">Cloud &amp; Infrastructure Services U.S.</span>
+              </span>
+              <span class="acc-date">10/2018 – 01/2022</span>
+            </button>
+          </h3>
+          <div class="acc-panel" id="p4" role="region" aria-labelledby="b4"><div class="acc-inner"><div class="acc-body"><ul>
+            <li>Maintained <strong>98%+ billing accuracy</strong> through SOX-compliant contract audits and validation of billing controls.</li>
+            <li>Partnered with Project Management Offices and Sales on pricing analysis, contract documentation and deal structuring across U.S. accounts.</li>
+            <li>Built operational reports and metrics that improved management visibility into Q2C execution, contract submissions, account reconciliations and process bottlenecks.</li>
+          </ul></div></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section t-navy" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">05 · Skills</p>
+        <h2>Tools and domain knowledge</h2>
+      </div>
+      <div class="skill-grid">
+        <div class="skill">
+          <h3>Data &amp; BI tools</h3>
+          <div class="tag-row"><span class="tag tag-orange">SQL</span><span class="tag tag-orange">Power BI</span><span class="tag tag-orange">IBM Cognos Analytics</span><span class="tag tag-orange">Microsoft Excel</span><span class="tag tag-orange">SPSS Modeler</span><span class="tag tag-orange">QMF for Workstation</span><span class="tag tag-orange">Db2</span><span class="tag tag-orange">GitHub</span></div>
+        </div>
+        <div class="skill">
+          <h3>Business systems</h3>
+          <div class="tag-row"><span class="tag tag-navy">SAP S/4HANA</span><span class="tag tag-navy">SAP HANA SD</span><span class="tag tag-navy">CRM platforms</span><span class="tag tag-navy">Conga</span></div>
+        </div>
+        <div class="skill">
+          <h3>AI &amp; automation</h3>
+          <div class="tag-row"><span class="tag tag-beige">IBM Bob</span><span class="tag tag-beige">Microsoft Copilot</span><span class="tag tag-beige">AI agents</span><span class="tag tag-beige">Data automation</span><span class="tag tag-beige">Process automation</span></div>
+        </div>
+        <div class="skill">
+          <h3>Finance &amp; revenue ops</h3>
+          <div class="tag-row"><span class="tag tag-brown">Revenue operations</span><span class="tag tag-brown">Quote-to-Cash</span><span class="tag tag-brown">Order-to-Cash</span><span class="tag tag-brown">Billing operations</span><span class="tag tag-brown">Revenue recognition</span><span class="tag tag-brown">Forecast visibility</span><span class="tag tag-brown">Dispute governance</span><span class="tag tag-brown">Operational controls</span></div>
+        </div>
+        <div class="skill">
+          <h3>Analytics practice</h3>
+          <div class="tag-row"><span class="tag tag-orange">KPI design</span><span class="tag tag-orange">Dashboard development</span><span class="tag tag-orange">BI reporting</span><span class="tag tag-orange">Business analysis</span><span class="tag tag-orange">Customer impact analysis</span><span class="tag tag-orange">Experimentation</span></div>
+        </div>
+        <div class="skill">
+          <h3>Collaboration</h3>
+          <div class="tag-row"><span class="tag tag-brown">Stakeholder management</span><span class="tag tag-brown">Executive communication</span><span class="tag tag-brown">Cross-functional collaboration</span><span class="tag tag-brown">Leadership partnership</span><span class="tag tag-brown">Go-to-market operations</span></div>
+        </div>
+        <div class="skill">
+          <h3>Process</h3>
+          <div class="tag-row"><span class="tag tag-navy">End-to-end process management</span><span class="tag tag-navy">Process improvement</span><span class="tag tag-navy">Data-driven strategy</span><span class="tag tag-navy">Sales operations support</span></div>
+        </div>
+        <div class="skill">
+          <h3>Languages</h3>
+          <div class="tag-row"><span class="tag tag-beige">Portuguese · Fluent</span><span class="tag tag-beige">English · Fluent</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + AWARDS -->
+  <section class="section t-brown" id="education">
+    <div class="wrap two">
+      <div>
+        <p class="eyebrow">06 · Education</p>
+        <h2 class="col-h">Academic background</h2>
+        <div class="edu">
+          <h4>MBA, Business Management: Technology and Digital Transformation</h4>
+          <p>FIA Business School</p>
+          <p class="when">2025 – 2026</p>
+        </div>
+        <div class="edu">
+          <h4>Bachelor’s Degree, International Relations</h4>
+          <p>ESAMC</p>
+          <p class="when">2016 – 2020</p>
+        </div>
+      </div>
+      <div id="awards">
+        <p class="eyebrow">07 · Awards and recognition</p>
+        <h2 class="col-h">Recognized results</h2>
+        <div class="awards">
+          <div class="award">
+            <h4>Q2C IMPACT Award</h4>
+            <div class="when">Q2C Americas · 1Q26</div>
+            <p>Measurable operational impact from a new management system that optimizes order management for complex Software renewals.</p>
+          </div>
+          <div class="award">
+            <h4>Entrepreneur Award</h4>
+            <div class="when">Finance and Operations · 4Q24</div>
+            <p>Renewal-discount monitoring that went beyond tracking the software inventory of 200+ North American accounts to enable proactive price revalidation on $650M+ USD in annual renewal billings, helping teams catch price discrepancies and protect customers, the ledger and AR.</p>
+          </div>
+          <div class="award">
+            <h4>BEST Award</h4>
+            <div class="when">Q2C Americas · 1Q23, 4Q24, 4Q25</div>
+            <p>Quarterly recognition for a complex management-reporting system and solutions for revenue and cash-reconciliation issues.</p>
+          </div>
+          <div class="award">
+            <h4>Client and Partner Award</h4>
+            <div class="when">Finance and Operations · 4Q22</div>
+            <p>Coordinated resolution efforts that improved open Accounts Receivable performance across a challenging account portfolio.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="creds" id="credentials">
+        <p class="eyebrow">08 · Credentials</p>
+        <h2 class="col-h">Certified and verifiable</h2>
+        <div class="creds-grid">
+          <a class="cred" href="https://www.credly.com/badges/c9a62908-675e-4085-8c01-ae9194cd1021/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="google-data-analytics-professional-certificate.2.png" width="80" height="80" loading="lazy" alt="Google Data Analytics Certificate badge, issued with Coursera">
+            <div>
+              <h3>Google Data Analytics Certificate</h3>
+              <p class="issuer">Google · Coursera</p>
+              <p class="meta">Completion · <span class="verify">Verify on Credly<span class="sr-only"> (opens in a new tab)</span></span></p>
+            </div>
+          </a>
+          <a class="cred" href="https://www.credly.com/badges/c4f5a941-49ea-4d5c-89c4-36cdd2c02ef0/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="finance-accounting-order-to-cash-delivery-and-improvement.png" width="80" height="80" loading="lazy" alt="IBM Order to Cash Delivery and Improvement badge, Intermediate">
+            <div>
+              <h3>Order to Cash Delivery &amp; Improvement</h3>
+              <p class="issuer">IBM Global Business Services · Finance &amp; Accounting</p>
+              <p class="meta">Intermediate · <span class="verify">Verify on Credly<span class="sr-only"> (opens in a new tab)</span></span></p>
+            </div>
+          </a>
+          <a class="cred" href="https://www.credly.com/badges/45635139-2233-45e1-aee8-c04ebef1c777/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="ai-first-agent-innovator.png" width="80" height="80" loading="lazy" alt="IBM AI-First Agent Innovator badge, Intermediate">
+            <div>
+              <h3>AI-First Agent Innovator</h3>
+              <p class="issuer">IBM Finance &amp; Operations</p>
+              <p class="meta">Intermediate · <span class="verify">Verify on Credly<span class="sr-only"> (opens in a new tab)</span></span></p>
+            </div>
+          </a>
+          <a class="cred" href="https://www.credly.com/badges/e15b1108-7b10-4746-bdb9-5fcfc93bd243/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="trusted-business-advisor-ii-smart-solutions.png" width="80" height="80" loading="lazy" alt="IBM Trusted Business Advisor II SMART at Solutions badge, Advanced">
+            <div>
+              <h3>Trusted Business Advisor II: SMART@Solutions</h3>
+              <p class="issuer">IBM Finance &amp; Operations</p>
+              <p class="meta">Advanced · <span class="verify">Verify on Credly<span class="sr-only"> (opens in a new tab)</span></span></p>
+            </div>
+          </a>
+          <a class="cred" href="https://www.credly.com/badges/d4eb4272-f7a5-4f14-b1ed-36d755457778/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="delivering-excellence-in-seller-experience.png" width="80" height="80" loading="lazy" alt="IBM Delivering Excellence in Seller Experience badge, Intermediate">
+            <div>
+              <h3>Delivering Excellence in Seller Experience</h3>
+              <p class="issuer">IBM Finance &amp; Operations</p>
+              <p class="meta">Intermediate · <span class="verify">Verify on Credly<span class="sr-only"> (opens in a new tab)</span></span></p>
+            </div>
+          </a>
+          <a class="cred" href="https://www.credly.com/badges/79dcdbdb-e314-4991-a4d8-6a07612933c5/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="client-centricity-nextgen.png" width="80" height="80" loading="lazy" alt="IBM Client Centricity NextGen badge, Intermediate">
+            <div>
+              <h3>Client Centricity NextGen</h3>
+              <p class="issuer">IBM Finance &amp; Operations</p>
+              <p class="meta">Intermediate · <span class="verify">Verify on Credly<span class="sr-only"> (opens in a new tab)</span></span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <p class="eyebrow">Let’s talk</p>
+        <h2>Open to new opportunities</h2>
+        <p>Interested in Revenue Operations, Business Analytics and Finance Operations roles. I would be glad to discuss how I can help your team.</p>
+        <div class="contact-list">
+          <span>Americana, São Paulo, Brazil</span>
+          <a href="mailto:hugo_jfc21@hotmail.com">hugo_jfc21@hotmail.com</a>
+          <a href="tel:+5519981971113">+55 19 98197-1113</a>
+          <a href="https://www.linkedin.com/in/hugo-lima-silva" target="_blank" rel="noopener">linkedin.com/in/hugo-lima-silva</a>
+        </div>
+        <div class="btn-row">
+          <a class="btn" href="https://cal.com/hugo-lima-da-silva" target="_blank" rel="noopener">Book a call</a>
+          <a class="btn outline" href="mailto:hugo_jfc21@hotmail.com">Send an email</a>
+          <a class="btn outline" href="Resume_HugoSilva.pdf" target="_blank" rel="noopener">Download resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Hugo Lima da Silva. Figures reflect work performed in IBM roles; client details are omitted.</div>
+</footer>
+
+<script>
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('.acc-item'));
+
+  function setState(item, open) {
+    item.classList.toggle('open', open);
+    item.querySelector('.acc-btn').setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  items.forEach(function (item) {
+    item.querySelector('.acc-btn').addEventListener('click', function () {
+      setState(item, !item.classList.contains('open'));
+    });
+  });
+
+  document.getElementById('expandAll').addEventListener('click', function () {
+    items.forEach(function (i) { setState(i, true); });
+  });
+  document.getElementById('collapseAll').addEventListener('click', function () {
+    items.forEach(function (i) { setState(i, false); });
+  });
+
+  window.addEventListener('beforeprint', function () {
+    items.forEach(function (i) { setState(i, true); });
+  });
+
+  /* Section rail: highlight the section currently in view */
+  var rail = document.getElementById('rail');
+  var links = Array.prototype.slice.call(rail.querySelectorAll('a'));
+  var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  var current = -2, ticking = false;
+
+  function update() {
+    ticking = false;
+    var line = window.innerHeight * 0.4, idx = -1;
+    sections.forEach(function (s, i) {
+      if (s && s.getBoundingClientRect().top <= line) idx = i;
+    });
+    if (window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 2) idx = sections.length - 1;
+    if (idx === current) return;
+    current = idx;
+    links.forEach(function (a, i) {
+      if (i === idx) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+    });
+    rail.style.setProperty('--p', idx < 0 ? 0 : idx / (links.length - 1));
+    if (idx >= 0 && rail.scrollWidth > rail.clientWidth) {
+      var a = links[idx];
+      rail.scrollTo({ left: a.offsetLeft - (rail.clientWidth - a.offsetWidth) / 2, behavior: 'smooth' });
+    }
+  }
+  function request() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }
+  window.addEventListener('scroll', request, { passive: true });
+  window.addEventListener('resize', request);
+  update();
+})();
+</script>
+</body>
+</html>
